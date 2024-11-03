@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Show diagnos data for a Raspberry Pi 
+# Show diagnose data for a Raspberry Pi 
 #   'vcgencmd' is a command line tool designed by Broadcom used on the Raspberry Pi.
 #   Interact directly with the hardware or the boot software of a Raspberry pi.
 #

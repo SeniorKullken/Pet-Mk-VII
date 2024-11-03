@@ -26,7 +26,7 @@
 6. Last minute debugging/patching😇 using the dashboard as developing terminal (using ssh, xRDP or VisualCode)
 
 # The journey is the goal
-The goul with our work is "It should be fun" and "The journey is the goal".
+The goal with our work is "It should be fun" and "The journey is the goal".
 <table>
     <tr>History: Pet-Mk.VIII early iterations
       <td><img src="./doc/Pet-Mk.VIII_build_phase_04(design_iterations).png" width="400px"></td>
@@ -146,7 +146,7 @@ For more information see repo https://github.com/Pet-Series/pet_ros2_currentsens
 ```
 
 ## Setup ROS2 workspace
-I don't have ROS2 installed directly on my host. I chose not to install ROS2 directly on the host/SCB/RPi, but to run ROS2 via Docker - Therfore must this step be done from within an interactive ROS2-Docker container.<br>
+I don't have ROS2 installed directly on my host. I chose not to install ROS2 directly on the host/SCB/RPi, but to run ROS2 via Docker - Therefore must this step be done from within an interactive ROS2-Docker container.<br>
 `Ubuntu Shell - Build/Initiate ROS2 Work Space`
 ```bash
 ~/ws_ros2/src$ cd ..

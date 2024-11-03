@@ -15,23 +15,23 @@
 '''
 from RaspberryPiVcgencmd import Vcgencmd
 
-sonsor = Vcgencmd()
+sensor = Vcgencmd()
 
-print(sonsor.get_cpu_temp(), "'C")
-print(sonsor.get_cpu_temp(fahrenheit=True), "'F")
+print(sensor.get_cpu_temp(), "'C")
+print(sensor.get_cpu_temp(fahrenheit=True), "'F")
 
-print("Ram split", sonsor.get_ram_split())
+print("Ram split", sensor.get_ram_split())
 
 voltages_to_test = ["core", "sdram_c", "sdram_i", "sdram_p"]
 for voltage in voltages_to_test:
-    print(voltage, "voltage", sonsor.measure_volts(voltage))
+    print(voltage, "voltage", sensor.measure_volts(voltage))
 
 clocks_to_measure = ["arm", "core", "h264", "isp", "v3d", "uart", "pwm", "emmc", "pixel", "vec", "hdmi", "dpi"]
 for clock in clocks_to_measure:
-    print(clock, "speed", sonsor.measure_clock(clock))
+    print(clock, "speed", sensor.measure_clock(clock))
 
 codecs_to_test = ["H264", "MPG2", "WVC1", "MPG4", "MJPG", "WMV9"]
 for codec in codecs_to_test:
-    print(codec, "available", sonsor.is_codec_available(codec))
+    print(codec, "available", sensor.is_codec_available(codec))
 
-print("Version: ", sonsor.get_version())
+print("Version: ", sensor.get_version())
